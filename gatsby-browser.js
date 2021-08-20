@@ -10,7 +10,7 @@ export const wrapRootElement = ({ element }) => {
     <Auth0Provider
       domain={process.env.AUTH0_DOMAIN}
       clientId={process.env.AUTH0_CLIENT_ID}
-      redirectUri={window.location.origin || process.env.AUTH0_REDIRECT_URI}
+      redirectUri={process.env.AUTH0_REDIRECT_URI}
       audience={process.env.AUTH0_AUDIENCE}
     >
       <AuthApolloProvider>
