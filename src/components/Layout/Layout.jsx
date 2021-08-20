@@ -25,7 +25,7 @@ const Layout = ({children}) => {
                     <NavButton to='/reports'><FaFileInvoice /></NavButton>
                     <NavButton to='/profile'><FaUser /></NavButton>
                     <NavButton to='/route'><FaRoute /></NavButton>
-                    <NavLogOutButton onClick={logout}><FaPowerOff /></NavLogOutButton>
+                    <NavLogOutButton onClick={ () => logout({ returnTo: process.env.GATSBY_AUTH0_REDIRECT_URI }) }><FaPowerOff /></NavLogOutButton>
                 </NavBar>)}
             </AnimatePresence>
         </Main>
