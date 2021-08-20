@@ -8,10 +8,10 @@ import Layout from "./src/components/Layout/Layout"
 export const wrapRootElement = ({ element }) => {
   return (
     <Auth0Provider
-      domain={process.env.AUTH0_DOMAIN}
-      clientId={process.env.AUTH0_CLIENT_ID}
-      redirectUri={process.env.AUTH0_REDIRECT_URI}
-      audience={process.env.AUTH0_AUDIENCE}
+      domain={process.env.GATSBY_AUTH0_DOMAIN}
+      clientId={process.env.GATSBY_AUTH0_CLIENT_ID}
+      redirectUri={process.env.GASTBY_AUTH0_REDIRECT_URI}
+      audience={process.env.GATSBY_AUTH0_AUDIENCE}
     >
       <AuthApolloProvider>
         <UserProvider>{element}</UserProvider>

@@ -4,7 +4,7 @@ import { createClient, Provider } from "urql"
 
 const setupClient = _token => {
   return createClient({
-    url: process.env.HASURA_GRAPHQL_URL,
+    url: process.env.GATSBY_HASURA_GRAPHQL_URL,
     fetchOptions: () => {
       return {
         headers: {
