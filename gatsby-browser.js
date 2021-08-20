@@ -10,7 +10,7 @@ export const wrapRootElement = ({ element }) => {
     <Auth0Provider
       domain={process.env.GATSBY_AUTH0_DOMAIN}
       clientId={process.env.GATSBY_AUTH0_CLIENT_ID}
-      redirectUri={process.env.GASTBY_AUTH0_REDIRECT_URI}
+      redirectUri={process.env.GATSBY_AUTH0_REDIRECT_URI}
       audience={process.env.GATSBY_AUTH0_AUDIENCE}
     >
       <AuthApolloProvider>
